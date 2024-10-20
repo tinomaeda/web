@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.top{
+    background-color: rgb(220, 246, 203);
+    padding: 5px;
+    font-size: 25px;
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+.top i.m1:hover,.top i.m2:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+
+.top i.m1,.top i.m2{
+
+    float: right;
+    background-color: rgb(220, 246, 203);
+    padding: 0px 5px;
+
+}
+.ss101{
+    max-width: 250px;
+    position: relative;
+    margin: auto;
+    background-color: #717171;
+}
+.sildeshow101{
+    display: none;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top:-22;
+    padding: 16px;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.text{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width:100%;
+    text-align: center;
+}
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+.all_sell{
+    white-space: nowrap;
+    overflow: auto;
+    max-lines: 25px;
+    position: relative;
+    margin: auto;
+
+}
+
+
+.text_sell{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 8px 13px;
+    position: absolute;
+    bottom: 8px;
+    width:100%;
+    text-align: center;
+}
+.sell_1{
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 24%;
+}
+.sell_1 img{
+    width: 24%;
+    
+}
+div h3{
+    text-align: center;
+    font-style:inherit;
+}
+div.sell_1 a{  
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+@media only screen and (max-width: 300px) {
+    div.sell_1 a,div h3  {font-size: 11px}
+}
